@@ -1,0 +1,821 @@
+/*
+Theme Name: Serveloja Soluções Empresariais
+Theme URI: http://www.serveloja.com.br
+Description: Tema desenvolvido exclusivamente para o site da Serveloja Soluções Empresariais em Aracaju - SE
+Author: Eduardo Feitosa
+Author URI: 
+Version: 1.0
+*/
+
+/* Adição de fontes */
+@font-face
+{
+    font-family: 'latoblack';
+    src: url('fonts/lato/lato-black-webfont.eot');
+    src: url('fonts/lato/lato-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lato/lato-black-webfont.woff2') format('woff2'),
+         url('fonts/lato/lato-black-webfont.woff') format('woff'),
+         url('fonts/lato/lato-black-webfont.ttf') format('truetype'),
+         url('fonts/lato/lato/lato-black-webfont.svg#latoblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'latolight';
+    src: url('fonts/lato/lato-light-webfont.eot');
+    src: url('fonts/lato/lato-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lato/lato-light-webfont.woff2') format('woff2'),
+         url('fonts/lato/lato-light-webfont.woff') format('woff'),
+         url('fonts/lato/lato-light-webfont.ttf') format('truetype'),
+         url('fonts/lato/lato-light-webfont.svg#latolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'latoregular';
+    src: url('fonts/lato/lato-regular-webfont.eot');
+    src: url('fonts/lato/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lato/lato-regular-webfont.woff2') format('woff2'),
+         url('fonts/lato/lato-regular-webfont.woff') format('woff'),
+         url('fonts/lato/lato-regular-webfont.ttf') format('truetype'),
+         url('fonts/lato/lato-regular-webfont.svg#latoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'bebas_neueregular';
+    src: url('fonts/bebas/bebasneue-webfont.eot');
+    src: url('fonts/bebas/bebasneue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/bebas/bebasneue-webfont.woff2') format('woff2'),
+         url('fonts/bebas/bebasneue-webfont.woff') format('woff'),
+         url('fonts/bebas/bebasneue-webfont.ttf') format('truetype'),
+         url('fonts/bebas/bebasneue-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Divs padrão do site */
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+ul li
+{
+	list-style: none;
+}
+
+.clear 
+{
+	visibility: hidden;
+	clear: both;
+}
+
+.alerta
+{
+    padding: 10px;
+    background-color: #FFFFBF;
+    border: 1px solid #c6b149;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: relative;
+    border-radius: 3px;
+    color: #c6b149;
+    font-weight: bold;
+}
+
+body
+{
+    font-family: 'latoregular';
+    margin-top: 0px;
+}
+
+h1
+{
+    font-family: 'latolight';
+    color: #6f6f6e;
+    font-size: 2.3rem;
+    line-height: 130%;
+}
+
+h2
+{
+    font-family: 'latolight';
+    color: #6f6f6e;
+    font-size: 1.7rem;
+}
+
+a, a:hover, a:visited
+{
+    font-family: 'latoblack';
+    text-decoration: none;
+    color: #116919;
+}
+
+.alerta
+{
+    padding: 10px;
+    background-color: #FFFFBF;
+    border: 1px solid #c6b149;
+    position: relative;
+    border-radius: 3px;
+    color: #c6b149;
+    font-weight: bold;
+    margin: 0px 0px 20px 0px;
+    width: 96%;
+}
+
+.falha
+{
+    padding: 10px;
+    background-color: #edcc90;
+    border: 1px solid #f00;
+    position: relative;
+    border-radius: 3px;
+    color: #f00;
+    font-weight: bold;
+    margin: 0px 0px 20px 0px;
+    width: 96%;
+}
+
+.sucesso
+{
+    padding: 10px;
+    background-color: #c1d8aa;
+    border: 1px solid #017804;
+    position: relative;
+    border-radius: 3px;
+    color: #017804;
+    font-weight: bold;
+    margin: 0px 0px 20px 0px;
+    width: 96%;
+}
+
+/* Conteúdo em todas as divs */
+.conteudo
+{
+    position: relative;
+    width: 1150px;
+    margin: 0px auto;
+}
+
+    .conteudo p
+    {
+        margin: 0px 0px 20px 0px;
+    }
+
+#header
+{
+	position: absolute;
+	padding: 15px 0px 15px 0px;
+	width: 100%;
+	height: 200px;
+	background-image: url(imagens/bgHeader.png);
+    background-repeat: repeat-x;
+	top: 0px;
+	z-index: 1200;
+    overflow: hidden;
+    margin-top: 45px;
+}
+
+	#header #logo
+	{
+		float: left;
+		width: 200px;
+	}
+	
+		#header #logo img
+		{
+			width: 100%;
+		}
+
+/* Menu auxiliar visivel quando ocorre um scroll */
+#headerAuxiliar
+{
+	position: fixed;
+	padding: 3px 0px 8px 0px;
+	width: 100%;
+	height: 35px;
+	background-color: #116919;
+	top: 45px;
+	z-index: 1600;
+}
+
+	#headerAuxiliar #logo
+	{
+		float: left;
+		width: 100px;
+        margin-top: 3px;
+	}
+	
+		#headerAuxiliar #logo img
+		{
+			width: 100%;
+		}
+
+/* Menu do site */
+#menu
+{
+    font-family: 'latoblack';
+    float: right;
+    margin-top: 20px;
+}
+
+    #menu a, #menu a:hover, #menu a:visited
+    {
+        color: #fff;
+        font-size: 0.85rem;
+        text-decoration: none;
+        margin-left: 15px;
+    }
+
+    #menu .menuVazado
+    {
+        border-radius: 25px;
+        border: 2px solid #fff;
+        padding: 3px 15px 3px 15px;
+    }
+
+    #menu .menuFechado
+    {
+        border-radius: 25px;
+        border: 2px solid #fff;
+        padding: 3px 15px 3px 15px;
+        background-color: #fff;
+        color: #116919;
+        margin-left: 15px;
+    }
+
+    #menu .redeSocial
+    {
+        width: 25px;
+        height: 25px;
+        float: right;
+        margin-left: 15px;
+        text-align: center;
+    }
+
+/* Paineis com infomações do site na página inicial */
+.painel
+{
+    position: relative;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+    .painel .cabecalhoPainel
+    {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .painel .painelIcone
+    {
+        float: left;
+        padding: 20px;
+        width: 46%;
+        height: 150px;
+    }
+
+        .painel .painelIcone p
+        {
+            color: #6f6f6e;
+            font-family: 'latolight';
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            line-height: 120%;
+        }
+
+        .painel .painelIcone h2
+        {
+            font-family: 'latolight';
+            color: #003f13;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            margin-bottom: 0px;
+        }
+
+        .painel .painelIcone .painelImagem
+        {
+            float: left;
+            width: 130px;
+            height:  130px;
+            text-align: center;
+            margin-right: 20px;
+        }
+
+        .painel .painelIcone a, .painel .painelIcone a:hover, .painel .painelIcone a:visited
+        {
+            float: left;
+            padding: 5px 10px 5px 10px;
+            border-radius: 5px;
+            background-color: #4e9728;
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            font-family: 'latoregular';
+            font-size: 0.85rem;
+        }
+
+#painelBanners
+{
+    height: 500px;
+    padding: 0px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+/* Footer do site */
+#footer
+{
+	position: relative;
+	padding: 10px 0px 10px 0px;
+	width: 100%;
+	background-color: #2c2c2c;
+    color: #fff;
+    font-family: 'latoregular';
+    font-size: 0.825rem;
+}
+
+    #footer .margem
+    {
+        margin: 10px 0px 0px 0px;
+    }
+
+    #footer .imagens
+    {
+        margin: 20px 10px 0px 10px;
+    }
+
+    #footer #blocoSelos
+    {
+        float: right;
+        width: 32%;
+    }
+
+    #footer #blocoSelos .selos
+    {
+        margin: 5px 10px 0px 10px;
+        width: 30%;
+    }
+
+#topoAcima
+{
+    background-color: #333333;
+    color: #fff;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    height: 25px;
+    z-index: 3000;
+    position: fixed;
+    text-align: right;
+    top: 0px;
+}
+
+    #topoAcima a, #topoAcima a:hover, #topoAcima a:visited
+    {
+        color: #fff;
+        font-size: 0.85rem;
+        text-decoration: none;
+        margin-left: 15px;
+    }
+
+    #topoAcima .redeSocial
+    {
+        width: 25px;
+        height: 25px;
+        float: right;
+        margin-left: 15px;
+        text-align: center;
+    }
+
+#topo
+{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 40px;
+	height: 40px;
+	background-image: url(imagens/topo.png);
+	background-repeat: no-repeat;
+    background-size: 100%;
+	z-index: 1400;
+	cursor: pointer;
+}
+
+/* Painel da parte do UNES */
+.backPainel
+{
+    padding: 0px;
+    /* background: linear-gradient(90deg, #036b29, #036b29, #036b29, #47b70d, #47b70d, #47b70d);
+    background: #469864; */
+    background-color: transparent;
+}
+
+    .backPainel a, .backPainel a:hover, .backPainel a:visited
+    {
+        border-radius: 25px;
+        border: 2px solid #fff;
+        padding: 5px 15px 5px 15px;
+        color: #fff;
+        text-decoration: none;
+        font-family: 'latoblack';
+        font-size: 0.80rem;
+        margin: 0px 10px;
+    }
+
+#blocoUnes
+{
+    padding: 50px 0px;
+    width: 340px;
+    margin: 20px 20px 20px 20px;
+    border-radius: 5px;
+    float: left;
+    text-align: center;
+    color: #fff;
+    background-color: #005d22;
+    height: auto;
+}
+
+#blocoCartao
+{
+    padding: 50px 0px;
+    width: 340px;
+    margin: 20px 20px 20px 20px;
+    border-radius: 5px;
+    float: left;
+    text-align: center;
+    color: #fff;
+    background-color: #4dab02;
+}
+
+#blocoOportunidade
+{
+    padding: 50px 0px;
+    width: 340px;
+    margin: 20px 20px 20px 20px;
+    border-radius: 5px;
+    float: left;
+    text-align: center;
+    color: #fff;
+    background-color: #52c516;
+}
+
+.titulo1
+{
+    font-size: 3.5rem;
+}
+
+.subTitulo1
+{
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.titulo2
+{
+    font-size: 2rem;
+    line-height: 100%;
+}
+
+.subTitulo2
+{
+    font-size: 1.2rem;
+}
+
+.backPainelVerde
+{
+    background-color: #00b205;
+}
+
+/* Painel com detalhes para contato */
+.backPainelCinza1
+{
+    background-color: #565655;
+    color: #fff;
+}
+
+    .backPainelCinza1 .painelContato
+    {
+        float: left;
+        margin: 10px;
+        width: 31%;
+        height: 190px;
+        font-size: 0.85rem;
+    }
+
+    .backPainelCinza1 .painelContato p
+    {
+        margin: 0px 0px 10px 0px;
+    }
+
+    .backPainelCinza1 .painelContato .titulo
+    {
+        font-family: 'latolight';
+        font-size: 1.3rem;
+    }
+
+    .backPainelCinza1 .painelContato .subtitulo
+    {
+        font-family: 'latoblack';
+        font-size: 1.8rem;
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+
+    .backPainelCinza1 .painelContato .miniIcone
+    {
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        width: 23px;
+        height: 18px;
+        text-align: center;
+    }
+
+    .backPainelCinza1 .painelContato .menuVazado
+    {
+        font-family: 'latoblack';
+        font-size: 0.8rem;
+        border-radius: 25px;
+        border: 2px solid #fff;
+        color: #fff;
+        padding: 2px 10px;
+        float: right;
+        margin: -45px 35px 0px 0px;
+    }
+
+/* Informações adicionais sobre a Serveloja */
+.backPainelCinza2
+{
+    background-color: #333333;
+    color: #fff;
+}
+
+    .backPainelCinza2 .painelSobre
+    {
+        float: left;
+        margin: 10px;
+        width: 31%;
+        padding: 50px 0px;
+    }
+
+    .backPainelCinza2 .painelSobre .imagem
+    {
+        margin-top: 20px;
+        width: 50%;
+    }
+
+    .backPainelCinza2 .painelSobre .marcacao
+    {
+        border: 2px solid #28963b;
+        position: relative;
+        width: 70px;
+        margin: 7px 0px 20px 0px;
+    }
+
+    .backPainelCinza2 .painelSobre .titulo
+    {
+        font-family: 'latoblack';
+        font-size: 1.8rem;
+    }
+
+    .backPainelCinza2 .painelSobre p 
+    {
+        font-size: 0.8rem;
+        margin: 20px 0px;
+    }
+
+    .backPainelCinza2 .painelSobre a, .backPainelCinza2 .painelSobre a:hover, .backPainelCinza2 .painelSobre a:visited
+    {
+        font-family: "latoregular";
+        text-decoration: none;
+        float: left;
+        padding: 10px 0px 10px 20px;
+        border-bottom: 1px solid #666;
+        background-image: url(imagens/setinha.jpg);
+        background-repeat: no-repeat;
+        background-position: 0px 7px;
+        color: #fff;
+        width: 100%;
+    }
+
+/* Informações adicionadas ao site */
+.link 
+{
+    float: right;
+    margin-top: -30px;
+}
+
+.midia
+{
+    float: left;
+    width: 340px;
+    height: 230px;
+    margin: 20px 20px 0px 20px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+    .midia img 
+    {
+        width: 100%;
+    }
+
+    .midia .baseTexto
+    {
+        font-family: 'latoblack';
+        font-size: 0.8rem;
+        float: left;
+        width: 320px;
+        height: 40px;
+        padding: 10px;
+        background-color: #000;
+        opacity: 0.8;
+        color: #fff;
+        margin: -70px 0px 0px 0px;
+        border-radius: 0px 0px 5px 5px;
+    }
+
+        .midia .baseTexto .titulo a, .midia .baseTexto .titulo a:hover, .midia .baseTexto .titulo a:visited
+        {
+            font-family: 'latoblack';
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .midia .baseTexto .titulo
+        {
+            float: left;
+            width: 245px;
+            height: 40px;
+            overflow: hidden;
+            line-height: 110%;
+        }
+
+        .midia .baseTexto .data
+        {
+            float: right;
+            width: 60px;
+            height: 40px;
+            overflow: hidden;
+            color: #ff0;
+            text-align: right;
+            font-size: 1rem;
+            line-height: 110%;
+        }
+
+.ajusteSingle
+{
+    margin-top: 150px;
+    margin-bottom: 50px;
+    color: #666;
+}
+
+.informacoesSingle
+{
+    font-size: 0.75rem;
+    margin: 20px 0px;
+}
+
+.paddings
+{
+    padding: 10px 0px 10px 0px;
+}
+
+/* Painel com links */
+.textoAPP
+{
+    color: #fff;
+    width: 650px;
+    text-align: left;
+    padding: 5px;
+    /* border: 2px dashed #fff; */
+    margin: 10px 0px 10px 0px;
+    font-size: 1.3rem;
+}
+
+.lojaAPP
+{
+    float: right;
+    margin: -54px 0px 0px 0px;
+    width: 150px;
+    height: 46px;
+}
+
+    .lojaAPP img
+    {
+        width: 100%;
+    }
+
+.margin1
+{
+    margin-right: 160px;
+}
+
+.margin2
+{
+    margin-right: 320px;
+}
+
+/* Galeria de fotos dos posts */
+.gallery
+{
+    margin: 20px 0px 20px 0px !important;
+    padding: 10px 0px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'latoblack';
+    font-size: 0.75rem;
+    
+}
+
+/* Painel de contato */
+.h2modificado
+{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ajusteMargemPainel
+{
+    padding-top: 20px;
+}
+
+/* Forms */
+.tituloInput
+{
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 10px 0px 0px 0px;
+    color: #666;
+}
+
+input
+{
+    padding: 7px;
+    font-size: 14px;
+    border-radius: 3px;
+    border: 1px solid #999;
+    background-color: #fff;
+    width: 50%;
+    -moz-box-shadow: inset 2px 2px 4px #ccc;
+    -webkit-box-shadow: inset 2px 2px 4px #ccc;
+    box-shadow: inset 2px 2px 4px #ccc;
+}
+
+textarea
+{
+    padding: 7px;
+    font-size: 14px;
+    border-radius: 3px;
+    border: 1px solid #999;
+    background-color: #fff;
+    width: 50%;
+    height: 70px;
+    -moz-box-shadow: inset 2px 2px 4px #ccc;
+    -webkit-box-shadow: inset 2px 2px 4px #ccc;
+    box-shadow: inset 2px 2px 4px #ccc;
+    resize: none;
+}
+
+.select
+{
+    padding: 6px 7px 6px 7px !important;
+    font-size: .875rem;
+    border-radius: 3px;
+    border: 1px solid #999;
+    background-color: #fff;
+    -moz-box-shadow: inset 2px 2px 4px #ccc;
+    -webkit-box-shadow: inset 2px 2px 4px #ccc;
+    box-shadow: inset 2px 2px 4px #ccc;
+    width: 51.5%;
+    height: 35px !important;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]
+{
+    padding: 7px;
+    width: 120px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    background-color: #224527;
+    box-shadow: none;
+    border-radius: 3px;
+    border: none;
+    margin-top: 5px;
+	float: left;
+}

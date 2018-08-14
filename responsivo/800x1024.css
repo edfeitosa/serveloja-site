@@ -1,0 +1,164 @@
+/* Responsivo para telas antigas ou tablets maiores */
+@media only screen and (max-width: 1024px) and (min-width: 801px) 
+{
+	.conteudo
+    {
+        position: relative;
+        margin: 0px auto;
+        width: 95%;
+    }
+
+    #header
+    {
+        position: fixed;
+        padding: 15px 0px 15px 0px;
+        width: 100%;
+        height: 50px;
+        background-color: #0b3723;
+        top: 0px;
+        z-index: 1200;
+    }
+
+        #header #logo
+        {
+            float: left;
+            width: 150px;
+        }
+
+            #header #logo img
+            {
+                width: 100%;
+            }
+    .painel .painelIcone
+    {
+        float: left;
+        padding: 20px;
+        width: 44%;
+        height: 150px;
+    }
+    
+    #painelBanners
+    {
+        height: 375px;
+        padding: 0px;
+        overflow: hidden;
+        margin-top: 79px;
+    }
+    
+    #headerAuxiliar
+    {
+        width: 0px;
+        height: 0px;
+        overflow: hidden;
+    }
+    
+    /* Menu do site */
+    #menu
+    {
+        margin-top: 13px;
+    }
+
+        #menu a, #menu a:hover, #menu a:visited
+        {
+            margin-left: 15px;
+        }
+    
+    /* H2 dos ícones */
+    .painel .painelIcone h2
+    {
+        font-size: 1.3rem;
+    }
+    
+    /* Painel da parte do UNES */
+    #blocoUnes
+    {
+        width: 310px;
+        margin: 20px 5px 20px 5px;
+    }
+
+    #blocoCartao
+    {
+        width: 310px;
+        margin: 20px 5px 0px 5px;
+    }
+
+    #blocoOportunidade
+    {
+        width: 310px;
+        margin: 20px 5px 20px 5px;
+    }
+    
+    /* Base das imagens no loop de notícias */
+    .midia
+    {
+        width: 310px;
+        height: 210px;
+        margin: 20px 5px 20px 5px;
+    }
+
+        .midia .baseTexto
+        {
+            width: 290px;
+            height: 60px;
+            padding: 10px;
+            margin: -80px 0px 0px 0px;
+        }
+
+            .midia .baseTexto .titulo
+            {
+                width: 220px;
+                height: 50px;
+            }
+    
+    .ajusteSingle 
+    {
+        margin-top: 100px;
+        margin-bottom: 50px;
+        color: #666;
+    }
+    
+    /* Painel com links */
+    .textoAPP
+    {
+        width: 475px;
+        padding: 8px 5px;
+        font-size: 1rem;
+    }
+    
+    /* Painel com informações sobre a Serveloja */
+    .backPainelCinza2 .painelSobre p 
+    {
+        font-size: 0.8rem;
+        margin: 20px 0px;
+    }
+
+    .backPainelCinza2 .painelSobre a, .backPainelCinza2 .painelSobre a:hover, .backPainelCinza2 .painelSobre a:visited
+    {
+        background-image: url(../imagens/setinha.jpg);
+        width: 100%;
+    }
+    
+    /* Footer do site */
+    #footer .margem
+    {
+        margin: 10px 0px 0px 0px;
+    }
+    
+    #footer .imagens
+    {
+        margin: 20px 10px 0px 10px;
+    }
+
+    #footer #blocoSelos
+    {
+        width: 50%;
+        margin-top: 5px;
+    }
+
+    #footer #blocoSelos .selos
+    {
+        margin: 5px 10px 0px 10px;
+        width: 20%;
+    }
+
+}

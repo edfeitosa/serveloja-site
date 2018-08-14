@@ -1,0 +1,458 @@
+/* Responsivo para celulares */
+@media only screen and (max-width: 480px) 
+{
+    body 
+    {
+        padding-top: 60px;
+    }
+    
+    h1
+    {
+        font-size: 1.5rem;
+    }
+    
+	.conteudo
+    {
+        position: relative;
+        width: 90%;
+        overflow: hidden;
+    }
+
+    #header
+    {
+        position: fixed;
+        padding: 10px 0px 10px 0px;
+        width: 100%;
+        height: 40px;
+        background-color: #116919;
+        top: 0px;
+        z-index: 3000;
+        margin-top: 35px;
+    }
+    
+        #header #logo
+        {
+            position: relative;
+            left: 50%;
+            margin-left: -60px;
+            width: 120px;
+        }
+
+            #header #logo img
+            {
+                width: 100%;
+            }
+    
+    #headerAuxiliar
+    {
+        width: 0px;
+        height: 0px;
+        overflow: hidden;
+    }
+    
+    #topoAcima
+    {
+        background-color: #333333;
+        color: #fff;
+        width: 100%;
+        padding: 10px 0px 10px 0px;
+        height: 15px;
+        z-index: 3000;
+        position: fixed;
+        text-align: right;
+        top: 0px;
+    }
+
+        #topoAcima a, #topoAcima a:hover, #topoAcima a:visited
+        {
+            color: #fff;
+            font-size: 0.5rem;
+            text-decoration: none;
+            margin: 1px 0px 0px 10px;
+        }
+
+        #topoAcima .redeSocial
+        {
+            width: 15px;
+            height: 15px;
+            float: right;
+            margin-left: 10px;
+            text-align: center;
+        }
+    
+        #topoAcima .redeSocial img
+        {
+            height: 100%;
+        }
+    
+    /* Botão de exibir/ocultar menu */
+    #botaoMenu
+    {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        width: 40px;
+        height: 40px;
+        background-image: url(../imagens/menu.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        z-index: 1400;
+    }
+    
+    /* Menu para telas menores */
+    #menu
+    {
+        position: fixed;
+        margin-left: 0px;
+        top: -20px;
+        left: -200px;
+        width: 180px;
+        height: 100%;
+        background-color: #158e11;
+        z-index: 1300;
+		visibility: visible;
+        padding-top: 10px;
+    }
+		
+		#menu a, #menu a:visited
+		{
+			padding: 5px 0px 5px 0px;
+			font-family: 'latoblack';
+			color: #fff;
+			font-size: 0.8rem;
+			float: left;
+			width: 136px;
+            padding: 5px 10px 5px 10px;
+			text-decoration: none;
+        	border: 2px solid #fff;
+            border-radius: 25px;
+			margin: 5px 0px 5px 10px;
+		}
+		
+		#menu a:active
+		{
+			padding: 5px 0px 5px 0px;
+			font-family: 'latoblack';
+			color: #ffdd00;
+			background-color: #629CE3;
+			font-size: 0.8rem;
+			float: left;
+			width: 136px;
+            padding: 5px 10px 5px 10px;
+			text-decoration: none;
+        	border: 2px solid #fff;
+            border-radius: 25px;
+			margin: 5px 0px 5px 10px;
+            background-color: aquamarine;
+		}
+    
+        #menu .menuVazado
+        {
+            width: 136px;
+            padding: 5px 10px 5px 10px;
+            border-radius: 25px;
+            border: 2px solid #fff;
+            padding: 5px 10px 5px 10px;
+        }
+
+        #menu .menuFechado
+        {
+            width: 136px;
+            padding: 5px 10px 5px 10px;
+            border-radius: 25px;
+            border: 2px solid #fff;
+            padding: 5px 10px 5px 10px;
+            background-color: #fff;
+            color: #224527;
+            margin-left: 10px;
+        }
+
+        #menu .redeSocial
+        {
+            width: 22%;
+            height: 25px;
+            float: right;
+            margin-left: 0px;
+            text-align: center;
+            border: none;
+        }
+    
+    /* Paineis com infomações do site na página inicial */
+    .painel
+    {
+        position: relative;
+        width: 100%;
+    }
+    
+        .painel .cabecalhoPainel
+        {
+            text-align: center;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .painel .painelIcone
+        {
+            float: left;
+            padding: 0px;
+            width: 100%;
+            height: 300px;
+            text-align: center;
+        }
+
+            .painel .painelIcone p
+            {
+                color: #6f6f6e;
+                font-family: 'latolight';
+                font-size: 0.9rem;
+                margin-bottom: 10px;
+                margin-top: -10px;
+                line-height: 120%;
+            }
+
+            .painel .painelIcone h2
+            {
+                font-family: 'latolight';
+                color: #003f13;
+                font-size: 1.3rem;
+                text-transform: uppercase;
+                letter-spacing: -1px;
+                margin-bottom: 0px;
+            }
+
+            .painel .painelIcone .painelImagem
+            {
+                float: left;
+                width: 100%;
+                height:  110px;
+                text-align: center;
+                margin-bottom: 25px;
+            }
+
+            .painel .painelIcone a, .painel .painelIcone a:hover, .painel .painelIcone a:visited
+            {
+                position: relative;
+                width: 100px;
+                padding: 5px 10px 5px 10px;
+                border-radius: 5px;
+                background-color: #4e9728;
+                color: #fff;
+                font-weight: bold;
+                text-decoration: none;
+                font-family: 'latoregular';
+                font-size: 0.85rem;
+                text-align: center;
+                left: 50%;
+                margin-left: -60px;
+                margin-top: 10px;
+            }
+
+    #painelBanners
+    {
+        height: 150px;
+        padding: 0px;
+        overflow: hidden;
+        width: 100%;
+        margin-top: 35px;
+    }
+    
+        #painelBanners img
+        {
+            width: 100%;
+        }
+    
+    .backPainel a, .backPainel a:hover, .backPainel a:visited
+    {
+        font-size: 0.75rem;
+        margin: 0px 5px;
+    }
+    
+    /* Painel da parte do UNES */
+    #blocoUnes
+    {
+        width: 290px;
+        height: 340px;
+        position: relative;
+        left: 50%;
+        margin: 20px 0px 0px -145px;
+    }
+
+    #blocoCartao
+    {
+        width: 290px;
+        height: 340px;
+        position: relative;
+        left: 50%;
+        margin: 20px 0px 0px -145px;
+    }
+
+    #blocoOportunidade
+    {
+        width: 290px;
+        height: 340px;
+        position: relative;
+        left: 50%;
+        margin: 20px 0px 20px -145px;
+    }
+    
+    .clearSmart
+    {
+        visibility: hidden;
+        clear: both;
+    }
+    
+    .link 
+    {
+        width: 100%;
+        position: relative;
+        margin-top: 0px;
+    }
+    
+    /* Base das imagens no loop de notícias */
+    .midia
+    {
+        width: 290px;
+        height: 196px;
+        margin: 20px 5px 0px -145px;
+        position: relative;
+        left: 50%;
+    }
+    
+    .midia .baseTexto
+    {
+        width: 270px;
+        height: 60px;
+        padding: 10px;
+        margin: -80px 0px 0px 0px;
+    }
+    
+        .midia .baseTexto .titulo
+        {
+            width: 200px;
+            height: 50px;
+            font-size: 0.7rem;
+        }
+
+        .midia .baseTexto .data
+        {
+            float: right;
+            width: 60px;
+            height: 50px;
+            overflow: hidden;
+            color: #ff0;
+            text-align: right;
+        }
+    
+    .ajusteSingle 
+    {
+        margin-top: 20px;
+    }
+    
+    .paddings
+    {
+        padding: 5px 0px 5px 0px;
+    }
+    
+    /* Painel com links */
+    .textoAPP
+    {
+        width: 98%;
+        padding: 4px 0px 5px 0px;
+        font-size: 0.70rem;
+        margin: 5px 0px;
+        text-align: center;
+    }
+    
+    .margin1
+    {
+        margin-right: 0px !important;
+    }
+
+    .margin2
+    {
+        margin-right: 0px !important;
+    }
+
+    .lojaAPP
+    {
+        float: left;
+        margin: 10px 0px 20px 0px;
+        width: 33%;
+        height: 24px;
+    }
+
+        .lojaAPP img
+        {
+            width: 100%;
+        }
+    
+    #painelApp
+    {
+        padding: 5px 0px 10px 0px;
+    }
+    
+    .gallery
+    {
+        padding-top: 0px;
+    }
+    
+    .gallery .gallery-item .gallery-icon
+    {
+        width: 50px;
+        height: 50px !important;
+        padding: 0px;
+        overflow: hidden;
+        margin: 0px 5px;
+    }
+    
+    /* Painel de contato fale conosco */
+    .backPainelCinza1 .painelContato
+    {
+        float: left;
+        margin: 10px;
+        width: 100%;
+    }
+    
+    /* Painel com informações sobre a Serveloja */
+    .backPainelCinza2 .painelSobre
+    {
+        width: 90%;
+        padding: 20px 0px;
+    }
+
+    .backPainelCinza2 .painelSobre p 
+    {
+        font-size: 0.8rem;
+        margin: 20px 0px;
+    }
+
+    .backPainelCinza2 .painelSobre a, .backPainelCinza2 .painelSobre a:hover, .backPainelCinza2 .painelSobre a:visited
+    {
+        background-image: url(../imagens/setinha.jpg);
+        width: 100%;
+    }
+    
+    /* Footer do site */
+    #footer .margem
+    {
+        margin: 10px 0px 0px 0px;
+    }
+    
+    #footer .imagens
+    {
+        margin: 20px 10px 0px 10px;
+    }
+
+    #footer #blocoSelos
+    {
+        float: left;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #footer #blocoSelos .selos
+    {
+        margin: 5px 10px 0px 10px;
+        width: 20%;
+    }
+}
